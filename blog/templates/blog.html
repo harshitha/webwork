@@ -1,5 +1,3 @@
-<html>
-<body>
 {% extends 'base.html' %}
 
 {% block content %}
@@ -18,7 +16,7 @@
 
 <div class="tags">
   {% for tag in post.tags.all %}
-  <a href="/blog/tag/{{tag}}">{{ tag }}</a>
+  <a href="/blog/tag/{{tag}}">{{tag}}</a>
   {% if not forloop.last %}, {% endif %}
   {% endfor %}
 </div>
@@ -27,6 +25,3 @@
 
 {% endblock %}
 
-</body>
-    
-</html>
